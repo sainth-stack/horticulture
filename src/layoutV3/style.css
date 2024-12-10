@@ -1,0 +1,5 @@
+.main-content2{
+    width: 80vh !important;
+    overflow: auto;
+    overflow-x:hidden;
+}

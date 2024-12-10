@@ -1,0 +1,5 @@
+.main-content{
+    height: 90vh !important;
+    overflow: auto;
+    overflow-x:hidden;
+}

@@ -1,0 +1,114 @@
+.batch-management-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.batches-list,
+.selected-batches {
+  flex-basis: 45%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custom-button {
+  display: "d-flex";
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+}
+
+th {
+  background-color: #cfecf6 !important;
+  color: white;
+}
+
+.heading1 {
+  font-family: poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.radio-container {
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+@media (max-width: 844px) {
+  .check_btn {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .bpt {
+    overflow: scroll;
+  }
+}

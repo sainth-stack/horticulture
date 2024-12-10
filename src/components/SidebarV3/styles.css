@@ -1,0 +1,228 @@
+.sidebar-list-items {
+  margin: 0;
+  padding: 0;
+}
+.sidebar-list-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.sidebar-list-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.user-dropdown {
+  width: 200px !important;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: red;
+  width: 100%;
+}
+.sidebar-scroll {
+  height: calc(90vh);
+  overflow: auto;
+  width: 250px;
+}
+.collapse {
+  margin-left: 50px;
+  padding: 0px;
+}
+.setup {
+  margin-left: 0px;
+}
+.setup:hover {
+  color: #2a8981;
+  cursor: pointer;
+}
+.adminActivities {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+.hide {
+  display: none !important;
+}
+.sidebar-icon-only .sidebar-list-items {
+  width: 50px;
+}
+.sidebar-icon-only .link-text,
+.sidebar-icon-only .adminActivities {
+  display: none;
+}
+.sidebar-icon-only .sidebar-scroll {
+  width: 50px;
+}
+.sidebar-icon-only .collapse {
+  margin-left: 0px;
+}
+.text-active {
+  color: #2a8981 !important;
+}
+.zindex99 {
+  z-index: 99 !important;
+}
+.right-side {
+  transform: rotateY(180deg);
+}
+
+.left-side {
+  transform: rotateY(0deg);
+}
+.nav-item {
+  font-style: normal;
+  font-size: 15px;
+  color: black !important;
+  font-family: Poppins;
+}
+
+/* styles.css */
+.sidebar-list-items {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-list-item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.sidebar-list-item:hover {
+  background-color: #f0f0f0; /* Update with your preferred hover color */
+  border-radius: 6px 0px 0px 6px; /* Update with your preferred color */
+}
+
+.sidebar-list-item.selected {
+  background-color: rgb(0, 123, 255) !important;
+  color: white !important;
+  border-radius: 6px 0px 0px 6px; /* Update with your preferred color */
+}
+
+.sidebar-list-item .link-text {
+  color: black;
+}
+
+.sidebar-list-item.selected .link-text {
+  color: #2a8981; /* Update with your preferred selected text color */
+}
+
+/* Add other styles as needed */
+/* Sidebar styling */
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.sidebar-closed {
+  transform: translateX(-100%);
+}
+
+/* Toggle button styling */
+.menu-icon-container_v3 {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+}
+
+/* Styling for selected sidebar item */
+.sidebar-list-item.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Sidebar item hover effect */
+.sidebar-list-item:hover {
+  background-color: #f0f0f0;
+}
+.nav-item {
+  color: black !important; /* Ensure text color is always black */
+}
+
+/* Media query for small screens */
+@media (max-width: 844px) {
+  .icon {
+    position: absolute;
+    top: 5.2rem;
+  }
+  .navbar {
+    background: #000 !important;
+  }
+  .sidebar {
+    width: 75%;
+  }
+}
+
+@media (max-width: 844px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: auto; /* Adjust height for dropdown */
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(
+      -100%
+    ); /* Initially hide the sidebar above the viewport */
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    transform: translateY(0); /* Slide the sidebar down into view */
+  }
+
+  .menu-icon-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: px;
+    margin-left: -40px;
+    margin-top: 10px;
+  }
+
+  .menu-icon-container .btn {
+    border: none;
+    background-color: transparent;
+  }
+
+  .sidebar-open {
+    background-color: #f8f9fa; /* Light background for visibility */
+    border-right: 1px solid #ddd; /* Add a border for better separation */
+  }
+
+  .sidebar-closed {
+    background-color: #f8f9fa; /* Match open state background */
+  }
+
+  .sidebar-list-item {
+    font-size: 16px;
+    color: #333; /* Text color for visibility */
+  }
+
+  .sidebar-list-item.selected {
+    background-color: #007bff; /* Highlight selected item */
+    color: white; /* Ensure selected text is visible */
+  }
+
+  .nav_link {
+    color: inherit; /* Ensure link text uses parent's color */
+  }
+}
+
+/* Hide menu icon on larger screens */
+@media (min-width: 845px) {
+  .menu-icon-container {
+    display: none;
+  }
+}
